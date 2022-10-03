@@ -42,6 +42,8 @@ public class APIStepDefs {
         }else {
             System.out.println("Status Kod Basarisiz");
         }
+
+        System.out.println("***********************************************************************************");
     }
 
 
