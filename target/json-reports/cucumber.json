@@ -1,0 +1,285 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-03T19:44:09.546Z",
+        "line": 4,
+        "name": "TC_2001 Kisileri okuma",
+        "description": "",
+        "id": "us-002-hepsiburada-crud-islemleri;tc-2001-kisileri-okuma",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2269548600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici kisiyi okumak icin \"https://restful-booker.herokuapp.com/booking/75\" endpointe gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://restful-booker.herokuapp.com/booking/75\"",
+                  "offset": 29
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.APIStepDefs.kullaniciKisiyiOkumakIcinEndpointeGider(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18996200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Status kodunun 200 oldugunu kontrol eder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.APIStepDefs.statusKodununOldugunuKontrolEder(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-03T19:44:11.893Z",
+        "line": 8,
+        "name": "TC_2001 Kisi ekleme",
+        "description": "",
+        "id": "us-002-hepsiburada-crud-islemleri;tc-2001-kisi-ekleme",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1104502200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici kisi eklemek icin \"https://restful-booker.herokuapp.com/booking\" endpointe gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://restful-booker.herokuapp.com/booking\"",
+                  "offset": 28
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.APIStepDefs.kullaniciKisiEklemekIcinEndpointeGider(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Status kodunun 200 oldugunu kontrol eder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.APIStepDefs.statusKodununOldugunuKontrolEder(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "US_002 HepsiBurada Crud Islemleri",
+    "description": "",
+    "id": "us-002-hepsiburada-crud-islemleri",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/API.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "ortak step adimlari",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10385471300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Kullanici \"hepsiburada\" sitesine gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hepsiburada\"",
+                  "offset": 10
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_sitesine_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-03T19:44:13.011Z",
+        "line": 7,
+        "name": "TC_1001 Urun Degerlendirme",
+        "description": "",
+        "id": "us-001-hepsiburada-urun-islemleri;tc-1001-urun-degerlendirme",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1326659500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Kullanici \"iphone\" icin arama islemi yapar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 10
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_icin_arama_islemi_yapar(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9962638000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Kullanici arama sonucunda gelen ilk urune gider",
+            "match": {
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_arama_sonucunda_gelen_ilk_urune_gider()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3850788200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Kullanici gidilen urundeki \"Değerlendirmeler\" tabina tiklar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Değerlendirmeler\"",
+                  "offset": 27
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_gidilen_urundeki_tabina_tiklar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6341219400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Kullanici gelen yorumlar icerisinde ilk degerlendirmenin \"Evet\" butonuna tiklar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Evet\"",
+                  "offset": 57
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_gelen_yorumlar_icerisinde_ilk_degerlendirmenin_butonuna_tiklar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2133867300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Kullanici \"Teşekkür Ederiz.\" yazisini gorur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Teşekkür Ederiz.\"",
+                  "offset": 10
+                }
+              ],
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_yazisini_gorur(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1220294400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Kullanici sayfayi kapatir",
+            "match": {
+              "location": "hepsiburadaProject.stepdefinitions.UIStepDefs.kullanici_sayfayi_kapatir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "US_001 HepsiBurada Urun Islemleri",
+    "description": "",
+    "id": "us-001-hepsiburada-urun-islemleri",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UI.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

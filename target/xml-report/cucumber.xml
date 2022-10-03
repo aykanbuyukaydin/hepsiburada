@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="38.822">
+    <testcase classname="US_002 HepsiBurada Crud Islemleri" name="TC_2001 Kisileri okuma" time="2.335">
+        <system-out>
+            <![CDATA[Then Kullanici kisiyi okumak icin "https://restful-booker.herokuapp.com/booking/75" endpointe gider.passed
+And Status kodunun 200 oldugunu kontrol eder................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002 HepsiBurada Crud Islemleri" name="TC_2001 Kisi ekleme" time="1.107">
+        <system-out>
+            <![CDATA[Then Kullanici kisi eklemek icin "https://restful-booker.herokuapp.com/booking" endpointe gider.passed
+And Status kodunun 200 oldugunu kontrol eder................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_001 HepsiBurada Urun Islemleri" name="TC_1001 Urun Degerlendirme" time="35.228">
+        <system-out>
+            <![CDATA[Given Kullanici "hepsiburada" sitesine gider................................passed
+Then Kullanici "iphone" icin arama islemi yapar.............................passed
+And Kullanici arama sonucunda gelen ilk urune gider.........................passed
+When Kullanici gidilen urundeki "Değerlendirmeler" tabina tiklar............passed
+And Kullanici gelen yorumlar icerisinde ilk degerlendirmenin "Evet" butonuna tiklar.passed
+Then Kullanici "Teşekkür Ederiz." yazisini gorur............................passed
+Then Kullanici sayfayi kapatir..............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
