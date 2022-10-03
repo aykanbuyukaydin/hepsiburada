@@ -8,4 +8,4 @@ NOT2: 2. kisimdaki otomasyon testinde -Kullanıcı “Teşekkür Ederiz” yazı
 
 NOT3: 2. ve 3. kisimlardaki UI VE API testlerini ayrı ayrı farkli frameworklerde yapmayip daha pratik olmasi acisindan tek bir framework de yaptim(selenium - cucumber kulladim)
 
-NOT4: butun kisimlardaki yaptigim çalismayi tek veri olarak github hesabima tam olarak yukledim
+NOT4: butun kisimlardaki yaptigim çalismayi tek veri olarak github hesabima tam olarak(documents klasorunun icinde diger kisimlar) yukledim
